@@ -8,7 +8,7 @@ Since the amino acid alignment comes with dash characters, each of them will be 
 For amino acid sequences that have multiple hits with 100% identity and highest bit score, redundancy will be removed.
 
 ## Motivation
- Converting each amino acid sequence in an alignment back to its corresponding DNA nucleotide sequence without changing the integrity of the amino acid alignment will result in an alignment of all nucleotide sequences containing the gene of interest. With this nucleotide alignment, one can look at conserved gene regions and determine whether existing degenerative primers used to find this gene are matching well with many of these sequences. Using the aligned conserved region, it is also possible to design a new primer that better detect the presence of this gene in selected metagenomes.
+ Converting each amino acid sequence in an alignment back to its corresponding DNA nucleotide sequence without changing the integrity of the amino acid alignment will result in an alignment of all nucleotide sequences that contains the gene of interest. With this nucleotide alignment, one can look at conserved gene regions and determine whether existing degenerative primers used to find this gene are matching well with many of these sequences. Using the aligned conserved region, it is also possible to design a new primer that better detect the presence of this gene in selected metagenomes.
 
 ## How to use BackToDNA?
 1) Install GO
@@ -27,9 +27,9 @@ Save each blast result corresponding to its nucleotide file name. ie: If nucleot
 
 Save your amino sequence alignment query as: query.fa
 
-3) Usage: If the directory where you save your amino acid alignment, nucleotide database and blast out is 'yourdirectory', then command to run is:
+3) Usage: If the directory where you save your amino acid alignment, nucleotide database and blast out is "yourdirectory/", then command to run is:
 
-./backtodna -outdir $yourdirectory -query $yourdirectory/query.fa > backtodna.fa
+./backtodna -outdir yourdirectory/ -query yourdirectory/query.fa > backtodna.fa
 
 ## Test
 ## License
