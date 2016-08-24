@@ -19,13 +19,16 @@ Save your blast result as : database.out
 
 Your nucleotide database: database.fa
 
-Your amino sequences as: query.fa
+Your amino acid alignment as: query.fa
 
 2b) If you have multiple database files that results in multiple blast outputs, in one directory:
 
 Save each blast result corresponding to its nucleotide file name. ie: If nucleotide file is nucleotide1.fa , save your result from blasting against this database as nucleotide1.out
 
 Save your amino sequence alignment query as: query.fa
+
+3) Usage: If the directory where you save your amino acid alignment, nucleotide database and blast out is yourdirectory, then
+Command: ./backtodna -outdir $yourdirectory -query $yourdirectory/query.fa > backtodna.fa
 
 ## Test
 ## License
