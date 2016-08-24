@@ -27,7 +27,7 @@ Save each blast result corresponding to its nucleotide file name. ie: If nucleot
 
 Save your amino sequence alignment query as: query.fa
 
-3) Usage: If the directory where you save your amino acid alignment, nucleotide database and blast out is yourdirectory, then command to run is:
+3) Usage: If the directory where you save your amino acid alignment, nucleotide database and blast out is 'yourdirectory', then command to run is:
 
 ./backtodna -outdir $yourdirectory -query $yourdirectory/query.fa > backtodna.fa
 
