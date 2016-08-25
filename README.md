@@ -47,4 +47,4 @@ If the directory where you save your amino acid alignment, nucleotide database a
 ``` ./backtodna -outdir yourdirectory/ -query yourdirectory/query.fa > backtodna.fa ```
 
 
-## License
+
