@@ -28,7 +28,9 @@ Save each blast result corresponding to its nucleotide file name. ie: If nucleot
 Save your amino sequence alignment query as: query.fa
 
 3) Usage:
+
 a) Create a directory to put the code.
+
 b) In that directory, execute the following commands:
 ```
 export GOPATH=`pwd`
