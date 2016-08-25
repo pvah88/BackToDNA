@@ -40,9 +40,10 @@ go install
 cd $GOPATH/bin
 ./backtodna [args]
 ```
+An example of how to run command:
 If the directory where you save your amino acid alignment, nucleotide database and blast out is "yourdirectory/", then command to run is:
 
-./backtodna -outdir yourdirectory/ -query yourdirectory/query.fa > backtodna.fa
+``` ./backtodna -outdir yourdirectory/ -query yourdirectory/query.fa > backtodna.fa ```
 
 
 ## License
