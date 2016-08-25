@@ -42,7 +42,7 @@ cd $GOPATH/bin
 ```
 An example of how to run command:
 
-If the directory where you save your amino acid alignment, nucleotide database and blast out is "yourdirectory/", then the command to run is:
+If the directory where you save your amino acid alignment, nucleotide database and blast output is "yourdirectory/", then the command to run is:
 
 ``` ./backtodna -outdir yourdirectory/ -query yourdirectory/query.fa > backtodna.fa ```
 
