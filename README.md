@@ -1,5 +1,5 @@
 ## What is BackToDNA?
-BackToDNA is written in Go language. The script converts an amino acid alignment back to its corresponding nucleotide alignment by processing and analyzing the BLAST results obtained from blasting these amino acid sequences against their original nucleotide sequences. This means that BackToDNA requires both the amino acid alignment and the DNA database containing the original sequences.
+BackToDNA is written in Go language. The script converts an amino acid alignment back to its corresponding nucleotide alignment by processing and analyzing the BLAST results obtained from blasting these amino acid sequences against their original nucleotide sequences. This means that BackToDNA requires the amino acid alignment, the DNA database containing the original sequences and the BLAST results.
 
 ## How does it work?
 BackToDNA reads BLAST results obtained from blasting amino acid sequences against their original nucleotide sequences and selects hits that have 100% identity and the highest bit score.
@@ -13,7 +13,7 @@ For amino acid sequences that have multiple hits with 100% identity and highest 
 ## How to use BackToDNA?
 1) Install GO
 
-2a) If you have one nucleotide database and one blast result, in one directory:
+2a) If you have one nucleotide database and one BLAST result, in one directory:
 
 Save your blast result as : database.out
 
@@ -21,7 +21,7 @@ Your nucleotide database: database.fa
 
 Your amino acid alignment as: query.fa
 
-2b) If you have multiple database files that results in multiple blast outputs, in one directory:
+2b) If you have multiple database files that results in multiple BLAST outputs, in one directory:
 
 Save each blast result corresponding to its nucleotide file name. ie: If nucleotide file is nucleotide1.fa , save your result from blasting against this database as nucleotide1.out
 
@@ -42,7 +42,7 @@ cd $GOPATH/bin
 ```
 An example of how to run command:
 
-If the directory where you save your amino acid alignment, nucleotide database and blast output is "yourdirectory/", then the command to run is:
+If the directory where you save your amino acid alignment, nucleotide database and BLAST output is "yourdirectory/", then the command to run is:
 
 ``` ./backtodna -outdir yourdirectory/ -query yourdirectory/query.fa > backtodna.fa ```
 
